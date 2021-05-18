@@ -20,11 +20,32 @@ Bónus:
 
 
 Ideia Classes:
-Jogador:
-1.	Score
-2.	Nome Utilizador
-Jogo:
-Estabilidade: 
-Utensílios:
-Reserva:
-
+  Utensilios
+1.Prato
+2.Copo
+3.Pires
+4.Balde
+5.Piramide
+6.Alfinete
+7.outros ...
+  Jogador
+  Score
+  Pilha
+  Fila
+  
+  Ideia de Design
+  
+  /-----------------------------//--------------------------------/
+  /                                                               /
+  /      Estabilidade : 100                                       /
+  /                                                               /
+  /                           Pilha                               /
+  /                                                               /
+  /                         Prato                                 /
+  /                         Copo                                  /
+  /                         Pires                                 /
+  /                                                               /
+  /   1.Piramide    2.Balde    3.Pires           4.Salvar         /
+  /                                                               /
+  /-----------------------------//--------------------------------/
+  
