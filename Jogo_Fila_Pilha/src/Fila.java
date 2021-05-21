@@ -1,27 +1,49 @@
+import java.util.ArrayList;
 import java.util.Queue;
 
 //Tudo e Fe em Deus
 public class Fila {
 	//Atributos
-	
-	private Queue<String> Fila;
+	private ArrayList<Utensilios> fila;
 	
 	//Default
 	
 	public Fila() {
-		
+		this.fila = new ArrayList<Utensilios>();
 	}
 	
-	public Fila(Queue<String> fila) {
-		super();
-		Fila = fila;
-	}
+
 
 	//Gets and Setters
 	
-	public Queue<String> getFila() {
-		return Fila;
-	}
+
 	
 	//Comportamentos
+	
+	public void gerarObj() {
+		//Gerar Obj Random
+		for(Sets objSets : Sets.values()) {
+			//Adicionar Util na fila
+			this.fila.add(new Utensilios(objSets));
+		}
+	}
+	
+	//ToString
+	@Override
+	public String toString() {
+		String listaUtensilios = "";
+		int i = 0;
+		for(Utensilios aobj : this.fila) {
+			listaUtensilios += "\n" + i + " - " + aobj.toString();
+		}
+		return listaUtensilios;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }

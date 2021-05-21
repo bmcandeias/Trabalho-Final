@@ -9,7 +9,7 @@ public class Pilha {
 	//Default
 	
 	public Pilha() {
-		
+		this.pilha = new Stack<Pilha>();
 	}
 	
 	public Pilha(Stack pilha) {
